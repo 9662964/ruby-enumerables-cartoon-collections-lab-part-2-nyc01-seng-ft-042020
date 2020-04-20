@@ -8,9 +8,11 @@ end
 def summon_captain_planet(planeteer_calls)
   # Use an Enumerable to capitalize and add '!' to every element in the passed in array
   # Return a new array of the results
+
+temp2 = []
+temp1 = calls.map do |element|
+  temp2 << "#{element.capitalize}!"
   
-  planeteer_calls.map do |element|
-  puts "#{element.capitalize}!"
 end
 
 def long_planeteer_calls(planeteer_calls)
